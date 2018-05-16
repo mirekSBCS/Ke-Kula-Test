@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Map Example</title>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Icons: Add this line of code for the icons that you find in materialize to work -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Stylesheets: All of your stylesheets are in this section  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <!--marks the end of your stylesheets section-->
+    <!--Scripts: All of your jQuery is in this section -->
+    <!--This is the jQuery CDN. To find, Google "jQuery CDN and select the website entitle 'code.jquery' "  -->
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <!-- The JavaScript that you need from materialize. Can be found on the "Get Started" page on materialize -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCmpE-W0hm6F8udYneGzt9t5G7r7S_j1x0&callback=initMap"
+  type="text/javascript"></script>
+  </head>
+
+  <body>
+    <div id="map"></div>
+
+      <!-- Modal Trigger -->
+      <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Post your location!</a>
+
+      <!-- Modal Structure -->
+      <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Log your Location?</h4>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" id="submitButton" class="modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+      </div>
+
+  </body>
+
+</html>
